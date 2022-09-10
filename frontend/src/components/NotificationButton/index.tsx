@@ -1,7 +1,11 @@
 import icon from '../../assets/img/notification-icon.svg';
 import './styles.css';
 
-function NotificationButton() {
+type Props = {
+    saleId: number;
+}
+
+function NotificationButton({saleId} : Props) {
     return (
 
         <div className="dsmeta-red-btn">
