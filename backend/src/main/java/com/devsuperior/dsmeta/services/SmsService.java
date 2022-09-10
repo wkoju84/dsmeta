@@ -31,7 +31,7 @@ public class SmsService {
     private SalesRepository salesRepository;
     public void sendSms(Long saleId) {
 
-        Sale sale = SalesRepository.findById(saleId).get();
+        Sale sale = salesRepository.findById(saleId).get();
 
         String date = sale.getDate().getMonthValue() + "/" + sale.getDate().getYear();
 
